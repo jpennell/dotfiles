@@ -1,9 +1,9 @@
 PS1='\u@\h \w$(GIT_PS1_SHOWDIRTYSTATE=1 __git_ps1)\$ '
 
-#Environment
+#Config
 #------------------------------------------------------------
-if [ -f ~/.system/env ]; then
-    . ~/.system/env
+if [ -f ~/.system/config ]; then
+    . ~/.system/config
 fi
 
 #Virtualenv
