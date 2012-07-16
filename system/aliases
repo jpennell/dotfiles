@@ -3,3 +3,6 @@ alias ls='ls -l --color'
 
 #cd
 alias ..="cd .."
+
+#editor
+alias e=$EDITOR

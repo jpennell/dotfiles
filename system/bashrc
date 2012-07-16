@@ -1,5 +1,11 @@
 PS1='\u@\h \w$(GIT_PS1_SHOWDIRTYSTATE=1 __git_ps1)\$ '
 
+#Environment
+#------------------------------------------------------------
+if [ -f ~/.system/env ]; then
+    . ~/.system/env
+fi
+
 #Virtualenv
 #------------------------------------------------------------
 export WORKON_HOME=$HOME/.virtualenvs
