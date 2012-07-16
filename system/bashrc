@@ -16,6 +16,12 @@ if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
 	source /usr/local/bin/virtualenvwrapper.sh
 fi
 
+#z
+#------------------------------------------------------------
+if [ -f ~/.system/z.sh ]; then
+    . ~/.system/z.sh
+fi
+
 
 #RVM
 #------------------------------------------------------------
