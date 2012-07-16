@@ -25,8 +25,8 @@ if [ -f ~/.system/aliases ]; then
     . ~/.system/aliases
 fi
 
-if [ -f ~/.git/aliases ]; then
-    . ~/.git/aliases
+if [ -f ~/.git-scm/aliases ]; then
+    . ~/.git-scm/aliases
 fi
 
 #Auto Complete
@@ -35,10 +35,10 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
-if [ -f ~/.git/git-prompt.sh ]; then
-    source ~/.git/git-prompt.sh
+if [ -f ~/.git-scm/git-prompt.sh ]; then
+    source ~/.git-scm/git-prompt.sh
 fi
 
-if [ -f ~/.git/git-completion.bash ]; then
-    source ~/.git/git-completion.bash
+if [ -f ~/.git-scm/git-completion.bash ]; then
+    source ~/.git-scm/git-completion.bash
 fi
