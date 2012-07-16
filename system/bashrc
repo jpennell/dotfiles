@@ -1,10 +1,12 @@
 PS1='\u@\h \w$(GIT_PS1_SHOWDIRTYSTATE=1 __git_ps1)\$ '
 
+
 #Config
 #------------------------------------------------------------
 if [ -f ~/.system/config ]; then
     . ~/.system/config
 fi
+
 
 #Virtualenv
 #------------------------------------------------------------
@@ -14,10 +16,12 @@ if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
 	source /usr/local/bin/virtualenvwrapper.sh
 fi
 
+
 #RVM
 #------------------------------------------------------------
 PATH=$PATH:$HOME/.rvm/bin #Add RVM to PATH
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
+
 
 #Functions
 #------------------------------------------------------------
@@ -25,15 +29,17 @@ if [ -f ~/.system/functions ]; then
     . ~/.system/functions
 fi
 
+
 #Aliases
 #------------------------------------------------------------
 if [ -f ~/.system/aliases ]; then
     . ~/.system/aliases
 fi
 
-if [ -f ~/.git-scm/aliases ]; then
-    . ~/.git-scm/aliases
+if [ -f ~/.git-scm/aliases.sh ]; then
+    . ~/.git-scm/aliases.sh
 fi
+
 
 #Auto Complete
 #------------------------------------------------------------
