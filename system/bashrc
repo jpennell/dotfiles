@@ -1,4 +1,23 @@
-PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
+PS1='\u@\h \w$(GIT_PS1_SHOWDIRTYSTATE=1 __git_ps1)\$ '
+
+#Virtualenv
+#------------------------------------------------------------
+export WORKON_HOME=$HOME/.virtualenvs
+
+if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
+	source /usr/local/bin/virtualenvwrapper.sh
+fi
+
+#RVM
+#------------------------------------------------------------
+PATH=$PATH:$HOME/.rvm/bin #Add RVM to PATH
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
+
+#Functions
+#------------------------------------------------------------
+if [ -f ~/.system/functions ]; then
+    . ~/.system/functions
+fi
 
 #Aliases
 #------------------------------------------------------------
@@ -10,7 +29,7 @@ if [ -f ~/.git/aliases ]; then
     . ~/.git/aliases
 fi
 
-#Auto complete
+#Auto Complete
 #------------------------------------------------------------
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
