@@ -3,8 +3,8 @@ PS1='\u@\h \w$(GIT_PS1_SHOWDIRTYSTATE=1 __git_ps1)\$ '
 
 #Config
 #------------------------------------------------------------
-if [ -f ~/.system/config ]; then
-    . ~/.system/config
+if [ -f ~/.system/config.sh ]; then
+    . ~/.system/config.sh
 fi
 
 
@@ -43,15 +43,15 @@ PATH=$PATH:$HOME/.rvm/bin #Add RVM to PATH
 
 #Functions
 #------------------------------------------------------------
-if [ -f ~/.system/functions ]; then
-    . ~/.system/functions
+if [ -f ~/.system/functions.sh ]; then
+    . ~/.system/functions.sh
 fi
 
 
 #Aliases
 #------------------------------------------------------------
-if [ -f ~/.system/aliases ]; then
-    . ~/.system/aliases
+if [ -f ~/.system/aliases.sh ]; then
+    . ~/.system/aliases.sh
 fi
 
 if [ -f ~/.git-scm/aliases.sh ]; then
