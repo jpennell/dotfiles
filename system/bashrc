@@ -1,0 +1,25 @@
+PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
+
+#Aliases
+#------------------------------------------------------------
+if [ -f ~/.system/aliases ]; then
+    . ~/.system/aliases
+fi
+
+if [ -f ~/.git/aliases ]; then
+    . ~/.git/aliases
+fi
+
+#Auto complete
+#------------------------------------------------------------
+if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
+    . /etc/bash_completion
+fi
+
+if [ -f ~/.git/git-prompt.sh ]; then
+    source ~/.git/git-prompt.sh
+fi
+
+if [ -f ~/.git/git-completion.bash ]; then
+    source ~/.git/git-completion.bash
+fi

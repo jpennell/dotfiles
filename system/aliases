@@ -1,0 +1,5 @@
+#ls
+alias ls='ls -l --color'
+
+#cd
+alias ..="cd .."
