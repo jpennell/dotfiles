@@ -8,6 +8,17 @@ if [ -f ~/.system/config ]; then
 fi
 
 
+#nvm
+#------------------------------------------------------------
+if [ -f ~/.nvm/nvm.sh ]; then
+    . ~/.nvm/nvm.sh
+fi
+
+if [ -f ~/.nvm/nvm-completion.bash ]; then
+    [[ -r ~/.nvm/nvm-completion.bash ]] && . ~/.nvm/nvm-completion.bash
+fi
+
+
 #Virtualenv
 #------------------------------------------------------------
 export WORKON_HOME=$HOME/.virtualenvs
@@ -15,6 +26,7 @@ export WORKON_HOME=$HOME/.virtualenvs
 if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
 	source /usr/local/bin/virtualenvwrapper.sh
 fi
+
 
 #z
 #------------------------------------------------------------
