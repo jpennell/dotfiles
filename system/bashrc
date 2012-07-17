@@ -30,8 +30,10 @@ fi
 
 #z
 #------------------------------------------------------------
-if [ -f ~/.system/z.sh ]; then
-    . ~/.system/z.sh
+export _Z_DATA=$HOME/.zdata
+
+if [ -f ~/.z/z.sh ]; then
+    . ~/.z/z.sh
 fi
 
 
