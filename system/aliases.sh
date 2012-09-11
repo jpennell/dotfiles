@@ -1,9 +1,9 @@
 #ls
-alias ls='ls -l --color'
+alias ls='ls -l'
 
 #cd
 alias ..="cd .."
 
 #Misc
 alias e=$EDITOR
-alias reload='. ~/.bashrc'
+alias reload='. ~/.bash_profile'
