@@ -6,6 +6,13 @@ if [ -f ~/.system/config.sh ]; then
     . ~/.system/config.sh
 fi
 
+#Perforce
+#------------------------------------------------------------
+
+if [ -f ~/.p4/config.sh ]; then
+    . ~/.p4/config.sh
+    export P4CONFIG=~/.p4/config.sh
+fi
 
 #nvm
 #------------------------------------------------------------
