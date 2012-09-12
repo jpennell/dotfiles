@@ -66,6 +66,10 @@ if [ -f ~/.git-scm/aliases.sh ]; then
     . ~/.git-scm/aliases.sh
 fi
 
+if [ -f ~/.mysql/aliases.sh ]; then
+    . ~/.mysql/aliases.sh
+fi
+
 
 #Auto Complete
 #------------------------------------------------------------
