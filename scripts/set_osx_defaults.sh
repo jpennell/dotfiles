@@ -201,3 +201,5 @@ defaults write com.apple.TextEdit RichText -int 0
 defaults write com.apple.TextEdit PlainTextEncoding -int 4
 defaults write com.apple.TextEdit PlainTextEncodingForWrite -int 4
 
+#Speed up mission control animations
+defaults write com.apple.dock expose-animation-duration -float 0.15
