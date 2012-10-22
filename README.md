@@ -1,4 +1,4 @@
-dotfiles
+~jpennell
 ========
 
-dotfiles
+My mac and linux dotfiles.
