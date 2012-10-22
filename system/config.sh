@@ -1,5 +1,6 @@
 export CLICOLOR=1
 export EDITOR='sublime'
+export PATH="/usr/local/share/python:$PATH"
 
 # GRC colorizes nifty unix tools all over the place
 if $(grc &>/dev/null)
