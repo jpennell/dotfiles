@@ -27,16 +27,6 @@ if [ -f /usr/local/share/python/virtualenvwrapper.sh ]; then
     source /usr/local/share/python/virtualenvwrapper.sh
 fi
 
-
-#z
-#------------------------------------------------------------
-export _Z_DATA=$HOME/.zdata
-
-if [ -f ~/.z/z.sh ]; then
-    . ~/.z/z.sh
-fi
-
-
 #Aliases
 #------------------------------------------------------------
 if [ -f ~/.system/aliases.sh ]; then
