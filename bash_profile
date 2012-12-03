@@ -1,11 +1,5 @@
 PS1='\u@\h \w$(GIT_PS1_SHOWDIRTYSTATE=1 __git_ps1)\$ '
 
-#Environment
-#------------------------------------------------------------
-if [ -f ~/.system/env.sh ]; then
-    . ~/.system/env.sh
-fi
-
 #Config
 #------------------------------------------------------------
 if [ -f ~/.system/config.sh ]; then
